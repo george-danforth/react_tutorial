@@ -1,0 +1,22 @@
+const element = document.createElement(tagName) creates an HTML element
+
+element.style = "background-color: blue" sets the background-color to blue
+
+element.className = "container" sets the class of the element to: container
+
+multiple classes can be set by separating them with a space character: element.className = "container center"
+
+////////
+A React Element is the smallest building block.
+
+React.createElement returns a React Element
+
+React.createElement(type, {props}, children)
+
+////////
+ReactDOM is the glue between React and the DOM.
+
+ReactDOM is separate from React because you can write React for native applications.
+
+Reconciliation is the process of syncing the Virtual DOM to the actual DOM.
+
