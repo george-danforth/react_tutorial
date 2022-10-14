@@ -20,3 +20,25 @@ ReactDOM is separate from React because you can write React for native applicati
 
 Reconciliation is the process of syncing the Virtual DOM to the actual DOM.
 
+////////
+Install ReactDOM with npm install react-dom
+
+Only createRoot method is required to use react-dom
+
+Import ReactDOM's createRoot method with import {createRoot} from "react-dom/client"
+
+ReactDOM weighs 130KB when imported. React weighs 6KB when imported. Total weight 136KB.
+
+The root element is where ReactDOM will render your UI
+
+createRoot(root).render(element);
+
+////////
+
+ReactDOM completely manages the root element
+
+You should not directly change/update the content of the root element
+
+Apps built with React have a single root element (The most common use case)
+
+Existing Apps that integrate React to make a feature interactive could have more than one root.
